@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700;800;900&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat+Alternates:wght@700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+body {
+    background-color: #ece7e0;
+}
+
+.banner-area {
+    /* border: 5px solid #dc8c74; */
+    height: 100vh;
+    background: linear-gradient(90deg, #ece7e0 37%, #200703 25%);
+    position: relative;
+    width: 100%;
+}
+
+.italy {
+    position: absolute;
+    right: 100px;
+    font-size: 100px;
+    top: 50px;
+    color: rgba(255, 255, 255, 0.1);
+    font-family: 'Montserrat Alternates', sans-serif;
+
+
+}
+
+.navbar-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 40px;
+}
+
+.navbar-box .hamburger {
+    position: relative;
+}
+
+.navbar-box .hamburger span:nth-child(1) {
+    position: absolute;
+    content: "";
+    height: 3px;
+    top: -13px;
+    right: 0;
+    width: 27px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.navbar-box .hamburger span:nth-child(2) {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -4px;
+    width: 18px;
+    height: 3px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.navbar-box .hamburger span:nth-child(3) {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 5px;
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s;
+}
+
+nav ul li a:hover {
+    color: #dc8c74;
+
+
+}
+
+nav ul li::after {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background-color: #dc8c74;
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    transition: all 0.5s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+#myTabs .active img {
+    border: 5px solid #200703;
+
+    width: 100%;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+
+.nav {
+    flex-direction: column;
+}
+
+.nav-item .nav-link img {
+    width: 100%;
+}
+
+.carousel-content-box {
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.carousel-content-box .carousel-content {
+    max-width: 400px;
+}
+
+
+.carousel-content h2 {
+    font-weight: 700;
+    font-family: 'Cookie', cursive;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+.carousel-content p {
+    color: rgba(255, 255, 255, 0.3);
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.carousel {
+    /* height: 85vh; */
+}
+
+.carousel-content button {
+    border: none;
+    background-color: #fff;
+    color: #89392c;
+    padding: 10px 22px;
+    font-weight: 800;
+    border-radius: 7px;
+
+}
+
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    margin-right: 6px;
+    margin-left: 6px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 50%;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+}
+
+
+/* header area ends  */
+
+
+/* product area starts  */
+
+.heading-section {
+    text-align: center;
+    margin-top: 70px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.heading-section h2 {
+    max-width: 800px;
+    font-size: 63px;
+    font-family: 'Cookie', cursive;
+    color: #200703;
+
+}
+
+.category-box {
+    position: relative;
+}
+
+
+.category-box img {
+    width: 100%;
+}
+
+
+.category-button {
+    position: absolute;
+    z-index: 2;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, 177%);
+}
+
+.category-button a {
+    background-color: #89392c;
+    color: #fff;
+    padding: 10px 52px;
+    font-size: 18px;
+}
+
+/* category ends */
+
+
+/* product area starts  */
+
+.product-box {
+    position: relative;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+
+.product-box img {
+    width: 100%;
+}
+
+
+.product-button {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    /* top: 89%;
+    left: 50%;
+    transform: translate(-39%, -50%); */
+    top: 94%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.product-button a {
+    display: block;
+    background-color: #89392c;
+    color: #fff;
+    padding: 10px 52px;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+}
+
+
+/* product area ends  */
+
+
+
+
+/* bag area starts  */
+
+.bag-box {
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+
+.bag-box img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+.bag-button {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.bag-button p {
+    color: #111;
+    padding: 7px 15px;
+    font-weight: 700;
+    width: 100%;
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0;
+}
+
+.bag-button span {
+    font-weight: 700;
+    color: #111;
+}
+
+.bag-box:hover .bag-button p {
+    color: #89392c;
+}
+
+/* bag area ends  */

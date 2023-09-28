@@ -1,0 +1,33 @@
+@media(max-width:999px) {
+    nav {
+        display: none;
+    }
+
+    .nav-item {
+        width: 23%;
+
+    }
+
+    .nav {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 30px;
+        z-index: 3;
+    }
+
+    .carousel-content-box {
+        display: flex;
+        gap: 50px;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .carousel-content-box img {
+        max-width: 300px;
+    }
+
+    .carousel-content {
+        display: none;
+    }
+}
