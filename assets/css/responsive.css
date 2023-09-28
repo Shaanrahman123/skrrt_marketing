@@ -94,4 +94,10 @@
         font-size: 18px;
         text-align: center;
     }
+
+    .heading-section h2 {
+        font-size: 7vw;
+
+
+    }
 }
