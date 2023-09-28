@@ -4,7 +4,8 @@
     }
 
     .nav-item {
-        width: 23%;
+        /* width: 23%; */
+        max-width: 100px;
 
     }
 
@@ -30,9 +31,33 @@
     .carousel-content {
         display: none;
     }
+
+    .tab-content {
+        margin-top: 45px;
+    }
+
+    .carousel-indicators {
+        position: absolute;
+        right: 0;
+        bottom: -116px;
+    }
 }
 
-@media(max-width:768px) {}
+@media(max-width:768px) {
+    .tab-content {
+        margin-top: 45px;
+    }
+
+    .logo img {
+        max-width: 90%;
+    }
+
+    .carousel-indicators {
+        position: absolute;
+        right: 0;
+        bottom: -86px;
+    }
+}
 
 @media(max-width:500px) {
     .tab-content {
@@ -41,5 +66,12 @@
 
     .logo img {
         max-width: 90%;
+    }
+
+    .carousel-indicators {
+        position: absolute;
+        right: 0;
+        bottom: -118px;
+
     }
 }
