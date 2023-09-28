@@ -233,7 +233,8 @@ nav ul li:hover::after {
 
 .heading-section h2 {
     max-width: 800px;
-    font-size: 63px;
+    /* font-size: 63px; */
+    font-size: 5.5vw;
     font-family: 'Cookie', cursive;
     color: #200703;
 
