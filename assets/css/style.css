@@ -19,7 +19,6 @@ body {
 }
 
 .banner-area {
-    /* border: 5px solid #dc8c74; */
     height: 100vh;
     background: linear-gradient(90deg, #ece7e0 37%, #200703 25%);
     position: relative;
@@ -29,7 +28,6 @@ body {
 .italy {
     position: absolute;
     right: 100px;
-    /* font-size: 100px; */
     font-size: 7vw;
     top: 50px;
     color: rgba(255, 255, 255, 0.1);
