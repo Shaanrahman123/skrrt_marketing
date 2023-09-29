@@ -13,3 +13,18 @@ document.querySelector("#tab3-tab").addEventListener("click", function () {
     document.querySelector("#myTabs .active img").style.borderColor = "#274829";
 
 });
+
+
+
+(function ($) {
+    "use strict";
+    if ($(".wow").length) {
+        var wow = new WOW({
+            boxClass: "wow",
+            animateClass: "animated",
+            mobile: true,
+            live: true,
+        });
+        wow.init();
+    }
+})(jQuery);

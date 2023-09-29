@@ -322,7 +322,7 @@ nav ul li:hover::after {
 }
 
 
-.bag-button {
+.bag-title {
     width: 100%;
     background-color: #fff;
     display: flex;
@@ -332,7 +332,7 @@ nav ul li:hover::after {
     padding: 10px 0px;
 }
 
-.bag-button p {
+.bag-title p {
     color: #111;
     padding: 7px 15px;
     font-weight: 700;
@@ -351,6 +351,63 @@ nav ul li:hover::after {
 
 .bag-box:hover .bag-button p {
     color: #89392c;
+}
+
+
+
+.tab-box .nav {
+    flex-direction: row !important;
+}
+
+.tab-box .nav-item {
+    width: auto !important;
+}
+
+.tab-box .nav-link {
+    border-radius: 50%;
+    padding: 14px !important;
+    margin: 0px 2px;
+    border: 3px solid #ddd;
+}
+
+.tab-box li:nth-child(1) .nav-link {
+
+    background-color: #056d05;
+}
+
+.tab-box li:nth-child(2) .nav-link {
+
+    background-color: brown;
+}
+
+.tab-box li:nth-child(3) .nav-link {
+
+    background-color: orangered;
+}
+
+
+
+
+.tab-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0px;
+    background-color: #fff;
+}
+
+.tab-box ul {
+    margin-top: 0px !important;
+}
+
+.tab-box ul li {
+    display: flex !important;
+    gap: 10px !important;
+}
+
+.tab-box .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    border: 3px solid black;
 }
 
 /* bag area ends  */
