@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700;800;900&family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat+Alternates:wght@700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat+Alternates:wght@700;800;900&family=Poppins:wght@400;500;600;800;900&display=swap');
 
 * {
     padding: 0;
@@ -45,6 +46,11 @@ body {
 
 .navbar-box .hamburger {
     position: relative;
+    cursor: pointer;
+}
+
+.navbar-box .hamburger span {
+    transition: all 0.3s;
 }
 
 .navbar-box .hamburger span:nth-child(1) {
@@ -78,6 +84,14 @@ body {
     height: 3px;
     background-color: white;
     border-radius: 10px;
+}
+
+.navbar-box .hamburger:hover span:nth-child(1) {
+    width: 35px;
+}
+
+.navbar-box .hamburger:hover span:nth-child(3) {
+    width: 27px;
 }
 
 
@@ -154,7 +168,7 @@ nav ul li:hover::after {
 
 .carousel-content h2 {
     font-weight: 700;
-    font-family: 'Cookie', cursive;
+    font-family: 'Poppins', sans-serif;
     letter-spacing: 3px;
     color: #fff;
 }
@@ -176,6 +190,16 @@ nav ul li:hover::after {
     padding: 10px 22px;
     font-weight: 800;
     border-radius: 7px;
+    border: 2px solid white;
+    transition: all 0.3s;
+
+}
+
+.carousel-content button:hover {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid white;
 
 }
 
@@ -232,8 +256,8 @@ nav ul li:hover::after {
 .heading-section h2 {
     max-width: 800px;
     /* font-size: 63px; */
-    font-size: 5.5vw;
-    font-family: 'Cookie', cursive;
+    font-size: 3vw;
+    font-family: 'Poppins', sans-serif;
     color: #200703;
 
 }
@@ -426,7 +450,7 @@ nav ul li:hover::after {
 /* 88888888888888888888888888 category of product section 8888888888888888888888888888 */
 
 .pro-cat-bg {
-    background-color: rgb(128, 128, 80);
+    background-color: #ad7759;
 }
 
 .card-span {
@@ -500,3 +524,27 @@ nav ul li:hover::after {
 
 
 /* 88888888888888888888888888 category of product section 8888888888888888888888888888 */
+
+
+
+/* foooter box  */
+
+.footer-box {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.text-dark {
+    /* font-weight: ; */
+}
+
+.footer-text li,
+.footer-text p {
+    color: #89392c !important;
+    font-weight: 600;
+}
+
+/* foooter box  */
