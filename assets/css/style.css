@@ -396,6 +396,11 @@ nav ul li:hover::after {
     background-color: #fff;
 }
 
+.tab-box span {
+    font-weight: 600;
+    color: #111;
+}
+
 .tab-box ul {
     margin-top: 0px !important;
 }
@@ -411,3 +416,87 @@ nav ul li:hover::after {
 }
 
 /* bag area ends  */
+
+
+
+
+
+
+
+/* 88888888888888888888888888 category of product section 8888888888888888888888888888 */
+
+.pro-cat-bg {
+    background-color: rgb(128, 128, 80);
+}
+
+.card-span {
+    border-radius: 10px;
+}
+
+.card-span img {
+    border-radius: 10px;
+    max-height: 550px;
+}
+
+.text-12000 {
+    color: #fff !important;
+    margin: 12px 0px;
+}
+
+.pro-cat-head {
+    font-size: 2.98598rem !important;
+}
+
+.fs-1 {
+    font-size: 1.2rem !important;
+}
+
+.pro-cat-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pro-cat-box2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+}
+
+.card-span {
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    border: 0;
+}
+
+@media (max-width: 768px) {
+    .cat-content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .pro-cat-head {
+        font-size: 1.98598rem !important;
+    }
+
+    .pro-cat-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .pro-cat-box2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+/* 88888888888888888888888888 category of product section 8888888888888888888888888888 */
